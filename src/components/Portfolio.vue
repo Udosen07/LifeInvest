@@ -1,4 +1,3 @@
-<!-- src/components/Portfolio.vue -->
 <template>
   <div class="bg-white rounded-lg shadow-lg p-6">
     <div class="flex justify-between items-center mb-4">

@@ -9,7 +9,7 @@ interface PortfolioItem {
 
 export const usePortfolioStore = defineStore("portfolio", {
   state: () => ({
-    portfolio: JSON.parse(localStorage.getItem("portfolio") || "[]") as PortfolioItem[],
+    portfolio: JSON.parse(localStorage.getItem("portfolio") ?? "[]") as PortfolioItem[],
   }),
 
   getters: {

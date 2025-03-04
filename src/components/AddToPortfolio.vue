@@ -1,4 +1,3 @@
-<!-- src/components/AddToPortfolio.vue -->
 <template>
   <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
     <div class="bg-white p-6 rounded-lg shadow-xl max-w-md w-full">
@@ -6,8 +5,9 @@
 
       <form @submit.prevent="addToPortfolio">
         <div class="mb-4">
-          <label class="block text-slate-700 mb-2">Symbol</label>
+          <label for="symbol" class="block text-slate-700 mb-2">Symbol</label>
           <input
+            id="symbol"
             type="text"
             :value="symbol"
             disabled
@@ -16,8 +16,9 @@
         </div>
 
         <div class="mb-4">
-          <label class="block text-slate-700 mb-2">Shares</label>
+          <label for="shares" class="block text-slate-700 mb-2">Shares</label>
           <input
+            id="shares"
             v-model.number="shares"
             type="number"
             min="0.01"
@@ -28,8 +29,9 @@
         </div>
 
         <div class="mb-6">
-          <label class="block text-slate-700 mb-2">Price per share ($)</label>
+          <label for="price" class="block text-slate-700 mb-2">Price per share ($)</label>
           <input
+            id="price"
             v-model.number="price"
             type="number"
             min="0.01"

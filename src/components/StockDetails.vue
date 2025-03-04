@@ -76,7 +76,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, onMounted } from "vue";
+import { ref, computed, watch } from "vue";
 import { useWatchlistStore } from "@/stores/watchlist";
 import StockChart from "@/components/StockChart.vue";
 import type { StockData, HistoricalData } from "@/types";

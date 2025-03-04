@@ -93,6 +93,7 @@ const handleSearch = async () => {
       showResults.value = true;
     } catch (error) {
       if (error instanceof Error && error.name === "AbortError") {
+        console.debug("Search was aborted by the user.");
       } else {
         console.error("Search error:", error);
       }

@@ -3,7 +3,7 @@ import type { WatchlistItem } from "@/types";
 
 export const useWatchlistStore = defineStore("watchlist", {
   state: () => ({
-    watchlist: JSON.parse(localStorage.getItem("watchlist") || "[]") as WatchlistItem[],
+    watchlist: JSON.parse(localStorage.getItem("watchlist") ?? "[]") as WatchlistItem[],
   }),
 
   actions: {
